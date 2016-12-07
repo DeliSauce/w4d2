@@ -1,0 +1,23 @@
+<h1> Meet <%= @cat.name %></h1>
+<br>
+
+
+<table border>
+  <tr>
+    <th> Color </th>
+    <th> Sex </th>
+    <th> Birthday </th>
+    <th> Age </th>
+  </tr>
+  <tr>
+    <td><%= @cat.color %></td>
+    <td><%= @cat.sex %></td>
+    <td><%= @cat.birth_date %></td>
+    <td><%= @cat.age %></td>
+  </tr>
+</table>
+
+
+<p>About: <%=@cat.description%> </p>
+
+<%= button_to "Make Rental Request", "/cat_rental_requests/new", method: :get %>
